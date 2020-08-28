@@ -29,7 +29,7 @@ class Parser
       const title = this.$(a).attr('title')
       fromWhom.push({
         href : this.$(a).attr('href'),
-        title : title ? title.replace(/^ст.пр. | доц. | преп. /, '') : this.$(a).text()
+        title : title ? title.replace(/^ст.пр.|доц.|преп./, '') : this.$(a).text()
       })
     } )
 
