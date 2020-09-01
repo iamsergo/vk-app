@@ -8,7 +8,7 @@ const list = require('./routes/list')
 const user = require('./routes/user')
 const schedule = require('./routes/schedule')
 
-app.use(require('cors')({ origin : 'https://iamsergo.github.io/client-schedule/' }))
+app.use(require('cors')())
 
 app.use(favicon(__dirname + 'favicon.ico'))
 
