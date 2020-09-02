@@ -71,7 +71,7 @@ class Parser
     const data = []
     $tds.each( (i, td) => {
       if(this.$(td).text().trim())
-        data.push(this.single(this.$(td), postfix, nth, i, `(${i + 1} гр.)`))
+        data.push(this.single(this.$(td), postfix, nth, 2, `(${i + 1} гр.)`))
     } )
 
     return data
